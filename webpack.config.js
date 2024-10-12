@@ -3,16 +3,16 @@ var webpack = require('webpack');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: 'dist',
+    path: __dirname + '/dist',
     filename: 'index.js',
     library: 'LogicRender',
     libraryTarget: 'umd',
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.jsx?$/,
-        loader: 'babel',
+        use: 'babel-loader',
         include: __dirname + '/src'
       }
     ]
@@ -27,7 +27,7 @@ module.exports = {
     }
   },
   plugins: [
-    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.ModuleConcatenationPlugin(),
   ],
   resolve: {
     extensions: ["", ".js", ".jsx"]

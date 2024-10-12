@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "build": "npm run clean && npm run lint && webpack -p",
-    "dev": "npm run clean && npm run lint && webpack -w",
+    "build": "npm run clean && npm run lint && webpack --mode production",
+    "dev": "npm run clean && npm run lint && webpack --mode development",
     "publish": "npm run build && npm publish"
   },
   "repository": {
@@ -23,23 +23,29 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "lodash.isequal": "^4.5.0"
+    "lodash.isequal": "^4.5.0",
+    "react": "^18.0.0"
   },
   "devDependencies": {
-    "babel-core": "^6.23.1",
-    "babel-eslint": "^7.0.0",
-    "babel-loader": "^6.3.2",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-1": "^6.16.0",
-    "eslint-config-airbnb": "^15.1.0",
-    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.0",
     "eslint-plugin-react": "^7.3.0",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0",
     "rimraf": "^2.3.4",
-    "webpack": "^1.13.3"
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
   },
   "author": "fengsx https://github.com/fengsx",
   "bugs": {

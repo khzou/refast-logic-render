@@ -41,7 +41,7 @@
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-react": "^7.37.1",
     "prop-types": "^15.6.0",
     "rimraf": "^2.3.4",
     "webpack": "^5.95.0",

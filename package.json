@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "lint": "eslint src",
-    "build": "npm run clean && npm run lint && webpack --mode production",
+    "build": "npm run clean && webpack --mode production",
     "dev": "npm run clean && npm run lint && webpack --mode development",
     "publish": "npm run build && npm publish"
   },

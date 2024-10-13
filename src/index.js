@@ -1,6 +1,6 @@
 import LogicRender from './LogicRender';
-import connect from './util'; // Removed extra spaces
+import util from './util'; // Removed extra spaces
 
-LogicRender.connect = connect;
+LogicRender.connect = util.connect;
 
 export default LogicRender;

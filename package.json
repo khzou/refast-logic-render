@@ -7,7 +7,7 @@
     "clean": "rimraf dist",
     "lint": "eslint src",
     "build": "npm run clean && webpack --mode production",
-    "dev": "npm run clean && npm run lint && webpack --mode development",
+    "dev": "npm run clean && npm run lint && npx webpack --mode development",
     "publish": "npm run build && npm publish"
   },
   "repository": {
@@ -30,7 +30,6 @@
     "@babel/core": "^7.25.8",
     "@babel/preset-env": "^7.25.8",
     "@babel/preset-react": "^7.25.7",
-    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.0",
     "babel-loader": "^8.0.0",
     "babel-plugin-add-module-exports": "^1.0.0",
